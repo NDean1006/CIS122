@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decision</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+
+    var msg = "";
+    var onhand = window.prompt("Enter on-hand quantity",0);
+    var onorder = window.prompt("Enter on-order quantity",0);
+    var totHO = parseFloat(onhand) + parseFloat(onorder);
+
+    if (totHO > 1000){
+        msg = "OK";
+    }else{
+        msg = "Need to Order"
+    }
+
+    document.write(totHO + ": " + msg);
+
+</script>
+</body>
+</html>

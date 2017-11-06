@@ -1,0 +1,381 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forms and syl</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style type="text/css">
+
+        iframe.leftCol {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+        }
+
+        div.leftCol {
+            min-width: 250px;
+
+        }
+
+        div.colRight {
+            float: right;
+            max-width: 1000px;
+            overflow-x: scroll;
+
+        }
+
+        body {
+            background-color: beige;
+            min-width: 1200px;
+        }
+
+        h1 {
+            text-align: center;
+            font-style: oblique;
+            text-decoration: underline;
+        }
+
+        h2 {
+            text-align: center;
+            font-style: oblique;
+        }
+
+        h3 {
+            text-decoration: underline;
+        }
+
+        ul {
+            margin: 0;
+            list-style-type: none;
+        }
+
+        li:before {
+            content: "- ";
+        }
+
+        /* nested form Table css*/
+
+        img {
+            display: block;
+            margin: auto;
+            border: 2pt outset grey;
+        }
+
+        table {
+            padding: 10px;
+        }
+
+        td {
+            padding-right: 5px;
+        }
+
+        td.col1 {
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        td.imgCol {
+            width: 99%;
+        }
+
+        td.reset {
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        td.submit {
+            text-align: right;
+            white-space: nowrap;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="row">
+    <div class="col-3 leftCol">
+        <iframe class="leftCol " src="Frames/leftCol.html"></iframe>
+    </div>
+
+    <div class="col-9 colRight">
+        <div id="top">
+
+            <div class="col-3" style="float: left">
+                <img class="img" src="images/jusu_infinity_cube.gif" alt="gif" usemap="#jusu_infinity_cube">
+            </div>
+            <div class="col-9">
+                <h1>
+                    Database Programming - CIS61
+                </h1>
+
+                <h2>
+                    Professor: Priscilla Grocer <br> Office: K-112
+                </h2>
+            </div>
+
+            <br>
+            <hr>
+        </div>
+
+        <map id="jusu_infinity_cube" name="jusu_infinity_cube">
+            <area shape="poly" coords="19,3,72,12,128,28,131,102,79,125,18,106" href="http://www.bristolcc.edu/">
+        </map>
+
+
+        <div class="row">
+            <div CLASS="col-8">
+                <h3>
+                    Course Description:
+                </h3>
+                <p>
+                    This course will teach the student to program using the programming language available in a
+                    relational
+                    database management system. The student will learn to work with fourth generation language
+                    programming
+                    and will analyze, design and develop, write and execute programs in a database environment.
+                </p>
+            </div>
+
+
+            <div class="col-4" style="float: right">
+                <img src="images/sphere.jpg" alt="sphere" usemap="#sphere">
+            </div>
+        </div>
+        <map id="sphere" name="sphere">
+            <area shape="circle" coords="75,75,75" href="http://www.bristolcc.edu/students/careerservices/" >
+        </map>
+
+        <hr>
+        <div>
+            <h3>
+                Course Objectives:
+            </h3>
+            <p>
+                The objective of this course is to help the student become an effective database programmer using Visual
+                dBase. At the completion of this course, the following objectives should have been accomplished:
+            </p>
+            <ul>
+                <li>
+                    learn to develop a normalized relational database
+                </li>
+                <li>
+                    learn to setup and maintain a database
+                </li>
+                <li>
+                    learn to design a program to meet a business need
+                </li>
+                <li>
+                    learn to write a database program using a structured style
+                </li>
+                <li>
+                    learn to write a database program using an object oriented style
+                </li>
+                <li>
+                    learn to work with the visual components of Visual dBase
+                </li>
+                <li>
+                    learn to execute and debug problems in database programs
+                </li>
+            </ul>
+            <br>
+            <hr>
+        </div>
+
+        <div>
+            <h3>
+                Text Books:
+            </h3>
+            <p>
+                Several optional reference books are available at the bookstore. The class will focus on the information
+                available at this Web site.
+            </p>
+            <p>
+                Students with a PC at home should strongly consider buying Visual dBase v 7.0. One source where it is
+                available for $100 is at www.schoolworld.com. Please let me know if you find a better source.
+            </p>
+            <hr>
+        </div>
+        <div>
+            <h3>
+                Requirements:
+            </h3>
+            <p>
+                There will be a mid-semester and final exam. If the class is producing a lot of work, the instructor may
+                not feel that a mid-semester exam is needed. The mid-semester may become optional for those who are
+                caught up or possibly the class can vote on having or not having a mid-semester. Quizzes will be given
+                on an as needed basis. They will be announced or take-home quizzes. There will be several homework
+                assignments and a lot of programs to be written and run using Visual dBase. Weight will be based on
+                complexity - programs at the beginning of the semester will not carry as much weight as the more complex
+                programs at the end of the semester.
+                Students should check the Web site for schedule, assignments, programs and exams on a regular basis.
+            </p>
+            <hr>
+        </div>
+
+        <div>
+            <h3>
+                Grading:
+            </h3>
+            <table>
+                <tr>
+                    <td>
+                        10%
+                    </td>
+                    <td>
+                        Final exam
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        10%
+                    </td>
+                    <td>
+                        Midsemester exam (if not given 10% added to homework and projects)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        70%
+                    </td>
+                    <td>
+                        Homework, quizzes and programs
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        10%
+                    </td>
+                    <td>
+                        Class participation, responsibility about work, keeping up to date, quality of work, adding
+                        extras that are above and beyond, showing initiative, figuring out problems etc.
+                    </td>
+                </tr>
+            </table>
+            <hr>
+        </div>
+
+        <div>
+            <h3>
+                Evaluation:
+            </h3>
+            <p>
+                Assignments and programs are graded using either number grades or letter grades based on the following
+                (A=90-100), B=(80-89), C=(70-79), D=(60-69), F=below 60). The students grade for the course will use the
+                same scale and will be based on the percentages explained in the grading section. Plus and minus grades
+                will be given.
+            </p>
+            <hr>
+        </div>
+
+        <div>
+            <h3>
+                Attendance:
+            </h3>
+            <p>
+                The student is allowed to cut 6 hours of classes.
+            </p>
+            <hr>
+        </div>
+
+        <div>
+            <h3>
+                Methodology:
+            </h3>
+            <p>
+                The course is given using the lecture method and the student is encouraged to ask questions at any point
+                during the lecture. When appropriate, class exercises and problem solving techniques are used. The
+                "computer on wheels" will be used for many classes. The majority of hands on time will be to accomplish
+                assignments and will be on the student's time.
+            </p>
+            <hr>
+        </div>
+        <div>
+            <form action="MAILTO:Ndean13@bristolcc.edu" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend>Student Information:</legend>
+                    <table>
+                        <tr>
+                            <td class="col1">
+                                <label for="StudentName">Name</label>
+                                <input type="text" id="StudentName" name="StudentName" required>
+                            </td>
+                            <td class="col1" rowspan="2">
+                                Distence Learner:
+                                <input type="radio" id="yes" name="attendence" value="Y">Yes <br>
+                                <input type="radio" id="No" name="attendence" value="N">No&nbsp;&#8239;<br>
+                                <!-- narrow no-break space - &#8239; -->
+                            </td>
+                            <td class="col1">
+                                <label for="StudentEmail"> Email</label>
+                                <input type="text" id="StudentEmail" name="StudentEmail" required>
+                            </td>
+                            <td class="imgCol" rowspan="4">
+                                <img src="images/BCC.jpg" alt="BCC" usemap="#BCC">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col1">
+                                <label for="StudentSchool">School</label>
+                                <input type="text" id="StudentSchool" name="StudentSchool" required>
+                            </td>
+                            <td rowspan="3">
+                        <textarea
+                                id="msg" name="msg" rows="5" cols="30">
+                        </textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col1">
+                                <label for="major">Major</label>
+                                <input type="text" id="major" name="major" required>
+                            </td>
+                            <td class="col1" rowspan="2">
+                                Financhal Aid:
+                                <input type="checkbox" id="chkYes" name="chkYes" value="chkYes">Yes<br>
+                                <input type="checkbox" id="chkNo" name="chkNo" value="chkNo">No&#8239;<br>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="col1">
+                                <label for="prev.exp.">Prev. Exp.</label>
+                                <input type="text" id="prev.exp." name="prev.exp." required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="reset">
+                                <input type="reset" value="Reset">
+                            </td>
+                            <td></td>
+                            <td class="submit">
+                                <input type="submit" value="Submit">
+                            </td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+        <map id="BCC" name="BCC">
+            <area shape="poly" coords="26,51,102,56,93,83,104,89,101,113,26,113" href="http://www.bristolcc.edu/"
+                  alt="poly">
+            <area shape="rect" coords="113,50,184,117" href="http://www.pgrocer.net/PFGCIS120.html" alt="rect">
+            <area shape="circle" coords="228,83,32" href="http://www.pgrocer.net/PFGCIS122.html" alt="circle">
+        </map>
+        <hr>
+        <div>
+            <p>
+                <a href="#top">Back to the Top</a>
+                <br>
+                <a href="http://www.pgrocer.net/index.html">Return to home page</a>
+                <br>
+                <a href="http://www.pgrocer.net/PFGCIS152X14.html"> Return to previous page - CIS61</a>
+                <br>
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

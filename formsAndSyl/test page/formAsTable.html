@@ -1,0 +1,106 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Form as table</title>
+    <style type="text/css">
+
+    img{
+        display: block;
+        margin: auto;
+        border: 2pt outset grey;
+    }
+
+    table{
+        padding: 10px;
+    }
+
+    td {
+        padding-right: 5px;
+    }
+
+    td.col1 {
+            text-align: right;
+            white-space: nowrap;
+    }
+
+    td.imgCol {
+        width:99%;
+    }
+
+    td.resub {
+        text-align: right;
+        white-space: nowrap;
+    }
+
+     </style>
+</head>
+
+    <form action="MAILTO:Ndean13@bristolcc.edu" method="post" enctype="text/plain">
+    <fieldset>
+        <legend>Student Information:</legend>
+            <table>
+                <tr>
+                    <td class="col1">
+                        <label  for="StudentName">Name</label>
+                        <input type="text" id="StudentName" name="StudentName" required>
+                    </td>
+                    <td class="col1" rowspan="2">
+                        Distence Learner:
+                        <input type="radio" id="yes" name="attendence" value="Y">Yes <br>
+                        <input type="radio" id="No" name="attendence" value="N">No&nbsp;&#8239;<br>
+                        <!-- narrow no-break space - &#8239; -->
+                    </td>
+                    <td class="col1" colspan="2">
+                        <label  for="StudentEmail"> Email</label>
+                        <input type="text" id="StudentEmail" name="StudentEmail" required>
+                    </td>
+                    <td class="imgCol" rowspan="5">
+                        <img src="images/BCC.jpg" alt="BCC">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">
+                        <label for="StudentSchool">School</label>
+                        <input type="text" id="StudentSchool" name="StudentSchool" required>
+                    </td>
+                    <td rowspan="3" colspan="2">
+                        <textarea
+                            id="msg" name="msg" rows="5" cols="30">
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">
+                        <label for="Major">Major</label>
+                        <input type="text" id="major" name="major" required>
+                    </td>
+                    <td class="col1" rowspan="2">
+                        Financhal Aid:
+                        <input type = "checkbox" id="chkYes" name="chkYes" value="chkYes">Yes<br>
+                        <input type = "checkbox" id="chkNo" name="chkNo" value="chkNo">No&#8239;<br>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="col1">
+                        <label for="prev.exp.">Prev. Exp.</label>
+                        <input type="text" id="prev.exp." name="prev.exp." required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="resub">
+                        <input type="reset" value="Reset">
+                    </td>
+                    <td class="resub" colspan="2">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</form>
+
+
+
+</html>

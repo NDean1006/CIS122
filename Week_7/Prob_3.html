@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Books_cont</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+
+    var msg = "";
+    var book1 = window.prompt("Enter book 1 price",0);
+    var book2 = window.prompt("Enter book 2 price",0);
+    var book3 = window.prompt("Enter book 2 price",0);
+    var avgBP = ((parseFloat(book1) + parseFloat(book2) + parseFloat(book3))/3);
+
+    if (avgBP > 100){
+        msg = ": too expensive!";
+    }
+    else {
+        msg = ": OK";
+    }
+    document.write(avgBP.toFixed(0) + msg);
+
+</script>
+</body>
+</html>

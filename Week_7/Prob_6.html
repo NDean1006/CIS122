@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graduation</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+
+    var msg = "";
+    var stuName = window.prompt("Enter Student Name","");
+    var major = window.prompt("Enter Student major","").toUpperCase().trim();
+    var stuCred = window.prompt("Enter Student Credits",0);
+
+    if (major == "CI" && stuCred > 50){
+        msg = stuName + ": is eligible for graduation!";
+    }
+    else if(major == "CI") {
+        msg = stuName + ": is not eligible for graduation ";
+    }
+    else {
+        msg = "not a CI major";
+    }
+    document.write(msg);
+
+</script>
+</body>
+</html>

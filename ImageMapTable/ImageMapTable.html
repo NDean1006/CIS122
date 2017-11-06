@@ -1,0 +1,83 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ImageMapTable</title>
+
+    <style type="text/css">
+        table {
+            margin: auto;
+            margin-top: 4cm;
+            background-color: beige;
+            border-style: ridge;
+            border-color: black;
+              }
+
+        th{
+            text-align: center;
+          }
+
+        img {
+            display: block;
+            margin: auto;
+            border: 2pt outset grey;
+            }
+
+        tbody{
+             border-image: black;
+             color: brown;
+             }
+
+
+
+    </style>
+
+</head>
+    <table>
+
+        <tr>
+            <th colspan="3">Words words and Words words words</th>
+        </tr>
+
+        <tbody>
+
+            <tr>
+                <td>Words words words</td>
+                <td >Words words</td>
+                <td >Words words</td>
+            </tr>
+
+            <tr>
+                <td>Words words words <br> Words words words <br> Words words words <br> Words words words <br> Words words words</td>
+                <td ><a href="https://www.linkedin.com/in/nicholas-dean-07699a79/"><img src="images/logo.png" alt="logo"></a></td>
+                <td >
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td >Words words words <br> Words words words <br> Words words words <br> Words words words <br> Words words words <br> Words words words </td>
+                <td colspan="2" ><a href="https://www.bagelsandcream.com/">
+                    <img src="images/java_reduced.png" alt="java_reduced"></a></td>
+            </tr>
+
+            <map id="prog-logo" name="prog-logo">
+                <area shape="rect" coords="126,50,138,103" href="http://www.rockinandroastin.com/cafe2016">
+                <area shape="rect" coords="142,61,168,94" href="http://www.boltcoffeecompany.com/#home">
+                <area shape="rect" coords="169,61,197,94" href="http://www.boltcoffeecompany.com/">
+                <area shape="rect" coords="200,62,225,94" href="https://www.smallpointcafe.com/">
+            </map>
+
+                <!-- use map tag requires a hashtag for FireFox browser -->
+
+            <tr>
+                <td colspan ="3"><img src="images/Java-prog-logo.jpg" alt="java_logo" usemap="#prog-logo"></td>
+            </tr>
+
+        </tbody>
+
+    </table>
+</html>
