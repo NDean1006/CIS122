@@ -1,0 +1,35 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CIS 120 JSa1 p1 </title>
+    <style type="text/css">
+    </style>
+</head>
+<script type="text/javascript">
+    var ct = 0;
+    var totNumber = 0;
+    var msg = "";
+    var avg = 0;
+
+    do
+    {
+        var num = window.prompt("Enter Number",0);
+        totNumber += parseFloat(num);
+        ct++;
+    } while(ct<4)
+
+    var avg = parseFloat(totNumber)/4;
+
+    if (avg > 1000){
+        msg = "Good!";
+    }else if(avg >500){
+        msg = "OK";
+    }
+    else {
+        msg ="Poor";
+    }
+
+    document.write("Total: " + totNumber + "<br> Average: " + avg + "<br>" + msg);
+</script>
+</html>

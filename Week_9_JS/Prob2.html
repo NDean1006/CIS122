@@ -1,0 +1,31 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CIS 120 JSa1 p1 </title>
+    <style type="text/css">
+    </style>
+</head>
+<script type="text/javascript">
+    var ct = 0;
+    var cost = 0;
+    var price =0;
+    var prod = "";
+    var msg = "";
+    var prof = 0;
+
+   do {
+        prod = window.prompt("enter product name.");
+        cost = window.prompt("enter product cost.");
+        price = window.prompt("Enter product price.");
+        prof = parseFloat(price) - parseFloat(cost);
+        if (prof > 10){
+            msg = prod + ": Good Profit!";
+        }else {
+            msg = prod + ": Poor Profit";
+        }
+        document.write(msg + "<br>");
+        ct++;
+        } while (ct < 3)
+</script>
+</html>

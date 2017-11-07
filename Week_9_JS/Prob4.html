@@ -1,0 +1,27 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CIS 120 JSa1 p1 </title>
+    <style type="text/css">
+    </style>
+</head>
+<script type="text/javascript">
+    var ct = 0;
+    var msg = "";
+    var totWages = 0;
+
+    do {
+        var name = window.prompt("enter employee name.");
+        var hours = window.prompt("enter hours worked.");
+        var payRate = window.prompt("Enter rate of pay.");
+        var wage = (parseFloat(hours) * parseFloat(payRate));
+        totWages += wage;
+        msg = name + ": $" + wage;
+        document.write(msg + "<br>");
+        ct++;
+    } while (totWages <= 5000);
+
+    document.write("Total wages paid: $" + totWages);
+</script>
+</html>
