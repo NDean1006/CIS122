@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contact</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <Style type="text/css">
+    img{
+    display: block;
+    margin: auto;
+    border: 2pt outset grey;
+    }
+
+    table{
+    padding: 10px;
+    }
+
+    td {
+    padding-right: 10px;
+    }
+
+    td.col1 {
+    text-align: right;
+    white-space: nowrap;
+    }
+
+    td.chkBox{
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    td.imgCol {
+    width:99%;
+    }
+
+
+    td.reset {
+        text-align: right;
+        white-space: nowrap;
+    }
+
+    td.submit {
+        text-align: right;
+        white-space: nowrap;
+
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">Contact Form</h1>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row img-responsive">
+            <div class="col-12">
+                <form action="MAILTO:Ndean13@bristolcc.edu" method="post" enctype="text/plain">
+                    <fieldset>
+                        <legend>Technical Services Inquiry:</legend>
+                        <table>
+                            <tr>
+                                <td class="col1">
+                                    <label for="CustomerName">Name</label>
+                                    <input type="text" id="CustomerName" name="CustomerName" required>
+                                </td>
+                                <td class="chkBox" rowspan="1">
+                                    Web<input type="checkbox" id="chkWeb" name="chkWeb" value="chkWeb">
+                                    Mobile Web<input type="checkbox" id="chkMob" name="chkMob" value="chkMob">
+                                    Android App<input type="checkbox" id="chkApp" name="chkApp" value="chkApp">
+                                    <!-- narrow no-break space - &#8239; -->
+                                </td>
+
+                                <td class="imgCol" rowspan="4">
+                                    <img src="images/techBanner2.jpg" alt="BCC" class="img-responsive">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col1">
+                                    <label for="CustomerBusiness">Business</label>
+                                    <input type="text" id="CustomerBusiness" name="CustomerBusiness" required>
+                                </td>
+                                <td rowspan="3">
+                                    <textarea
+                                        id="msg" name="msg" rows="5" cols="30">
+                                    </textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col1">
+                                    <label for="Industry">Industry</label>
+                                    <input type="text" id="Industry" name="major">
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="col1">
+                                    <label  for="CustomerEmail"> Email</label>
+                                    <input type="text" id="CustomerEmail" name="CustomerEmail" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="reset">
+                                    <input type="reset" value="Reset">
+                                </td>
+
+                                <td class="submit">
+                                    <input type="submit" value="Submit">&#8239;&#8239;&#8239;
+                                </td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+                </form>
+            </div>
+
+
+
+        </div>
+
+        <hr>
+
+        <div class="row text-center">
+            <div class="col-4 ">
+                <a href="index.html"><h3>Home</h3></a>
+            </div>
+            <div class="col-4">
+                <a href="index.html#about"><h3>About me</h3></a>
+            </div>
+            <div class="col-4">
+                <a href="portfolio.html"><h3>Portfolio</h3></a>
+            </div>
+        </div>
+
+        <br>
+    </div>
+
+
+</body>
+</html>
